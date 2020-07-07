@@ -1,7 +1,19 @@
 jQuery(function() {
-    initGoogleMap()
-})
+    initGoogleMap();
+    initSlider();
+});
 
+function initSlider() {
+    $('.gallery').bxSlider({
+        pager: false,
+        controls: false,
+        minSlides: 4,
+        maxSlides: 4,
+        moveSlides: 1,
+        slideWidth: 390,
+        slideMargin: 30
+    });
+}
 function initGoogleMap() {
     !function(t) {
         if (t || null == t) {
