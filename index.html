@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -14,7 +15,7 @@
         <title>evente</title>
     </head>
 
-    <body class="mCustomScrollbar" data-mcs-theme="light">
+    <body>
         <div class="preloader">
             <span class="loader"><span class="loader-inner"></span></span>
         </div>
@@ -22,7 +23,7 @@
             <section class="top-section" id="top">
                 <header id="header">
                     <div class="container top-bar">
-                        <strong class="logo"><a href="#"><img src="images/logo.png" alt="Header Logo"></a></strong>
+                        <strong class="logo"><a href="#"><img src="/images/logo.png" alt="Header Logo"></a></strong>
                         <ul class="social">
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -32,7 +33,7 @@
                     </div>
                 </header>
                 <nav id="nav">
-                    <ul>
+                    <ul class="menu">
                         <li class="active"><a href="#top" class="scroll"></a><span class="tooltip">Home</span></li>
                         <li><a href="#speakers" class="scroll"></a><span class="tooltip">Speakers</span></li>
                         <li><a href="#partners" class="scroll"></a><span class="tooltip">Partners</span></li>
@@ -52,6 +53,7 @@
                                     2021.</h1>
                                 <p>The world’s newest challenges, arrive at a more innovative, meaningful,
                                     and inclusive place.</p>
+                                <div class="row-holder timer comingSoonTimerHolder"></div>
                             </div>
                             <div class="col-5">
                                 <address>
@@ -93,6 +95,21 @@
                                 <h3><a href="#">Sebastiaan Scheer</a></h3>
                                 <span>The Future of Cloud</span>
                             </li>
+                            <li>
+                                <img src="images/img02.jpg" alt="">
+                                <h3><a href="#">Johnny Flynn</a></h3>
+                                <span>Easy Functional Design</span>
+                            </li>
+                            <li>
+                                <img src="images/img03.jpg" alt="">
+                                <h3><a href="#">Brad Pitt</a></h3>
+                                <span>Building Data Driven Companies</span>
+                            </li>
+                            <li>
+                                <img src="images/img04.jpg" alt="">
+                                <h3><a href="#">Sebastiaan Scheer</a></h3>
+                                <span>The Future of Cloud</span>
+                            </li>
                         </ul>
                     </div>
                 </section>
@@ -100,19 +117,21 @@
                     <div class="container">
                         <h2>Partners.</h2>
                         <ul class="brands">
-                            <li><a href="#"><img src="images/logo01.png" alt=""></a></li>
-                            <li><a href="#"><img src="images/logo02.png" alt=""></a></li>
-                            <li><a href="#"><img src="images/logo03.png" alt=""></a></li>
-                            <li><a href="#"><img src="images/logo04.png" alt=""></a></li>
-                            <li><a href="#"><img src="images/logo05.png" alt=""></a></li>
-                            <li><a href="#"><img src="images/logo06.png" alt=""></a></li>
-                            <li><a href="#"><img src="images/logo07.png" alt=""></a></li>
-                            <li><a href="#"><img src="images/logo08.png" alt=""></a></li>
+                            <li><a href="#"><i class="fab fa-yahoo"></i></a></li>
+                            <li><a href="#"><i class="fab fa-digg"></i></a></li>
+                            <li><a href="#"><i class="fab fa-reddit"></i></a></li>
+                            <li><a href="#"><i class="fab fa-slack"></i></a></li>
+                            <li><a href="#"><i class="fas fa-blog"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pied-piper-alt"></i></a></li>
+                            <li><a href="#"><i class="fab fa-blogger-b"></i></li>
+                            <li><a href="#"><i class="fab fa-stumbleupon"></i></a></li>
+                            <li><a href="#"><i class="fab fa-html5"></i></li>
+                            <li><a href="#"><i class="fab fa-css3"></i></a></li>
                         </ul>
                     </div>
                 </section>
                 <section class="section video" id="video">
-                    <video class="video" muted loop id="myVideo" poster="images/img05.jpg">
+                    <video class="video" muted loop id="myVideo">
                         <source src="images/Preview_Fix 02.mp4" type="video/mp4">
                     </video>
                     <a class="play" id="myBtn" onclick="myFunction()"></a>
@@ -122,30 +141,213 @@
                         </div>
                     </div>
                 </section>
-                <section class="section" id="agenda">
+                <section class="section agenda" id="agenda">
                     <div class="container">
                         <h2>Agenda.</h2>
+                        <div class="row-holder">
+                            <div class="col-7 tab-content">
+                                <div class="tab" id="tab1">
+                                    <table class="schedule">
+                                        <tr>
+                                            <td class="time">10:00</td>
+                                            <td>
+                                                <div class="wrap">
+                                                    <h3>Meet & Greet</h3>
+                                                    <span>Consectetur adipisicing elit</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="time">12:00</td>
+                                            <td>
+                                                <div class="wrap">
+                                                    <h3>Sessions Stage</h3>
+                                                    <span>by Brandon Hoffman</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="time">13:00</td>
+                                            <td>
+                                                <div class="wrap">
+                                                    <h3>Lunch</h3>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="time">14:00</td>
+                                            <td>
+                                                <div class="wrap">
+                                                    <h3>Networking</h3>
+                                                    <span>Quod distinctio impedit sint accusantium by Jesscia Patel</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="time">16:00</td>
+                                            <td>
+                                                <div class="wrap">
+                                                    <h3>Q & A Session</h3>
+                                                    <span>Accusantium by Russell Matthews</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="tab" id="tab2">
+
+                                    <table class="schedule">
+                                        <tr>
+                                            <td class="time">10:00</td>
+                                            <td>
+                                                <div class="wrap">
+                                                    <h3>Perfect Place for UX designer</h3>
+                                                    <span>Quod distinctio impedit sint accusantium</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="time">11:00</td>
+                                            <td>
+                                                <div class="wrap">
+                                                    <h3>Web Developer Stratagies</h3>
+                                                    <span>by Jesscia Patel</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="time">13:00</td>
+                                            <td>
+                                                <div class="wrap">
+                                                    <h3>Lunch</h3>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="time">14:00</td>
+                                            <td>
+                                                <div class="wrap">
+                                                    <h3>Meet Top-Notch Experts</h3>
+                                                    <span>Quisque placerat quis erat elemen tumeno laoreet</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="time">16:00</td>
+                                            <td>
+                                                <div class="wrap">
+                                                    <h3>Q & A Session</h3>
+                                                    <span>Accusantium by Russell Matthews</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-4 date-holder tabset">
+                                <h2 class="date"><a href="#tab1"><span class="hold">Day 1 <span class="type">02 August</span></span></a></h2>
+                                <h2 class="date"><a href="#tab2"><span class="hold">Day 2 <span class="type">03 August</span></span></a></h2>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="section" id="withus">
                     <div class="container">
                         <h2>Are you with us?</h2>
+                        <div class="row-holder">
+                            <div class="col-2 plan type1">
+                                <strong class="price">219 <sup>$</sup> <span>Corporate</span></strong>
+                                <ul>
+                                    <li>Event solutions</li>
+                                    <li>Fresh solutions</li>
+                                    <li>Extraordinary results</li>
+                                    <li>Face to Face</li>
+                                </ul>
+                                <a href="#" class="btn"><span>Buy Tickets</span></a>
+                            </div>
+                            <div class="col-2 plan type2">
+                                <strong class="price">250 <sup>$</sup> <span>Professional</span></strong>
+                                <ul>
+                                    <li>Event solutions</li>
+                                    <li>Fresh solutions</li>
+                                    <li>Extraordinary results</li>
+                                    <li>Face to Face</li>
+                                    <li>Access to installations</li>
+                                </ul>
+                                <a href="#" class="btn"><span>Buy Tickets</span></a>
+                            </div>
+                            <div class="col-2 plan type3">
+                                <strong class="price">300 <sup>$</sup> <span>Enterprise</span></strong>
+                                <ul>
+                                    <li>Event solutions</li>
+                                    <li>Fresh solutions</li>
+                                    <li>Extraordinary results</li>
+                                    <li>Face to Face</li>
+                                    <li>Access to installations</li>
+                                    <li>Access to all talks</li>
+                                </ul>
+                                <a href="#" class="btn"><span>Buy Tickets</span></a>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <section class="section" id="buy">
+                <section class="section form-section" id="buy">
                     <div class="container">
                         <h2>Buy a ticket.</h2>
+                        <form action="#">
+                            <div class="row-holder">
+                                <div class="col-3">
+                                    <input type="text" placeholder="First Name*">
+                                    <input type="text" placeholder="Email*">
+                                    <label for="">Select your price type*</label>
+                                    <select name="" id="">
+                                        <option value="Corporate ($219)">Corporate ($219)</option>
+                                        <option value="Professional ($250)">Professional ($250)</option>
+                                        <option value="Enterprise ($300)">Enterprise ($300)</option>
+                                    </select>
+                                </div>
+                                <div class="col-3">
+                                    <input type="text" placeholder="Last Name*">
+                                    <input type="text" placeholder="Phone">
+                                    <label for="">Number of tickets</label>
+                                    <input type="number" class="numb" id="1" value="1">
+                                </div>
+                            </div>
+                            <div class="row-holder">
+                                <div class="col-12 checkbox-holder">
+                                    <label class="container_check">
+                                        Don’t want to miss anything from this special event. <br> Join our newsletter and stay up-to-date by using your email above.
+                                        <input type="checkbox" checked name="terms" value="Yes" class="required">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn"><span>Submit</span></button>
+                        </form>
                     </div>
                 </section>
                 <section class="section contact" id="contact">
                     <div class="map">
-                        <div class="google-map-holder" id="googleMap" data-marker="images/map-marker.png" data-lat="47.602264" data-long="-122.3359466" style="width:100%; height:100vh;"></div>
+                        <div class="google-map-holder" id="googleMap" data-marker="/images/map-marker.png" data-lat="47.602264" data-long="-122.3359466" style="width:100%; height:100vh;"></div>
+                    </div>
+                    <div class="box">
+                        <div class="container">
+                            <div class="holder">
+                                <h3>Contacts</h3>
+                                <address>
+                                    <i class="fas fa-home"></i>
+                                    Street Address, Location, <br>
+                                    City, Country
+                                </address>
+                                <span class=""phone><i class="fas fa-phone-alt"></i> [00] 000 000 00</span>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
             <footer id="footer">
                 <div class="container">
-                    <strong class="logo"><a href="#"><img src="images/footer-logo.png" alt="Footer Logo"></a></strong>
+                    <strong class="logo"><a href="#"><img src="/images/footer-logo.png" alt="Footer Logo"></a></strong>
                     <p>Copyright &copy; 2020. All rights reserved.</p>
                 </div>
             </footer>
@@ -158,6 +360,7 @@
         function myFunction() {
             if (video.paused) {
                 video.play();
+                btn.style.display = "none";
             } else {
                 video.pause();
             }
