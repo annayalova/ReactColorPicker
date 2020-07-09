@@ -2777,6 +2777,9 @@ html, body {
   .section.contact {
     padding: 0;
     position: relative; }
+    .section.contact .map {
+      width: 100%;
+      height: 100%; }
     .section.contact .box {
       position: absolute;
       top: 10%;
