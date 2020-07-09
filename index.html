@@ -10,8 +10,8 @@
         <link rel="stylesheet" href="css/main.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-dTRLmUbAL4uLFZVllgfCYnWMCa4w6xc"></script>
         <script src="js/jquery.main.js" ></script>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbZEcg7ip_tYqEhLFi40okgLYtqOc2gUs"></script>
         <title>evente</title>
     </head>
 
@@ -297,20 +297,20 @@
                         <form action="#">
                             <div class="row-holder">
                                 <div class="col-3">
-                                    <input type="text" placeholder="First Name*">
-                                    <input type="text" placeholder="Email*">
+                                    <input type="text" placeholder="First Name*" required>
+                                    <input type="text" placeholder="Email*" required>
                                     <label for="">Select your price type*</label>
-                                    <select name="" id="">
+                                    <select name="" id="" required>
                                         <option value="Corporate ($219)">Corporate ($219)</option>
                                         <option value="Professional ($250)">Professional ($250)</option>
                                         <option value="Enterprise ($300)">Enterprise ($300)</option>
                                     </select>
                                 </div>
                                 <div class="col-3">
-                                    <input type="text" placeholder="Last Name*">
+                                    <input type="text" placeholder="Last Name*" required>
                                     <input type="text" placeholder="Phone">
                                     <label for="">Number of tickets</label>
-                                    <input type="number" class="numb" id="1" value="1">
+                                    <input type="number" class="numb" id="1" value="1" required>
                                 </div>
                             </div>
                             <div class="row-holder">
