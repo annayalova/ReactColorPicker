@@ -3,6 +3,4 @@ import {ColorPicker} from './ColorPicker';
 
 import "./App.css";
 
-<ColorPicker/>
-
 export default ColorPicker
