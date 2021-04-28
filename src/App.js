@@ -3,4 +3,20 @@ import {ColorPicker} from './ColorPicker';
 
 import "./App.css";
 
-export default ColorPicker
+class App extends React.Component {
+    state = {
+        color: '#ffcc33',
+    }
+
+    change = color => {
+        this.setState({color})
+    }
+
+    render() {
+        return (
+            <ColorPicker value={this.state.color} onChange={this.change}/>
+        )
+    }
+}
+
+export default App
