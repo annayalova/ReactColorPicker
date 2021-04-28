@@ -24,8 +24,8 @@ export class ColorPicker extends React.Component {
         };
     }
 
-    changeColor= selection => {
-        this.setState({ ...selection,  isPaletteOpen: !this.state.isPaletteOpen });
+    changeColor= newColor => {
+        this.setState({value: newColor,  isPaletteOpen: !this.state.isPaletteOpen });
     }
 
     update() {

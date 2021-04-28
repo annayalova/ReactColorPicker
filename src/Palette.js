@@ -2,12 +2,11 @@ import React from 'react';
 import reactCSS from 'reactcss';
 
 export class Palette extends React.Component {
+
     change = () => {
-        this.props.onSelect({
-            color: this.props.color,
-            value: this.props.value
-        })
+        this.props.onSelect(this.props.value)
     }
+
     render() {
         const styles = reactCSS({
             'default': {
@@ -30,7 +29,7 @@ export class Palette extends React.Component {
         });
 
         return (
-            <li style={styles.items} color={this.props.color} value={this.props.value} onClick={this.change}>{this.props.color} <span style={styles.color}></span></li>
+            <li style={styles.items} value={this.props.value} onClick={this.change}>{this.props.color} <span style={styles.color}></span></li>
         );
     }
 }
