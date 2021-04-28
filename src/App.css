@@ -1,0 +1,168 @@
+body{
+  background: #e3dfde;
+}
+#root{
+  padding-top: 100px;
+  margin: 0 auto;
+  width: 400px;
+}
+.panel:after,
+.list:after{
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 65px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #ffffff transparent;
+}
+.list:after{
+  right: 16px;
+}
+input[type=range] {
+  height: 3px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  height: 3px;
+  cursor: pointer;
+  background: rgb(255,0,0);
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range].rangeGreen::-webkit-slider-runnable-track {
+  background: rgb(0,255,0);
+  background: linear-gradient(90deg, rgba(0,255,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range].rangeBlue::-webkit-slider-runnable-track {
+  background: rgb(0,0,255);
+  background: linear-gradient(90deg, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range]::-webkit-slider-thumb {
+  border: 1px solid #ffffff;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #999999;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgb(255,0,0);
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range].rangeGreen:focus::-webkit-slider-runnable-track {
+  background: rgb(0,255,0);
+  background: linear-gradient(90deg, rgba(0,255,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range].rangeBlue:focus::-webkit-slider-runnable-track {
+  background: rgb(0,0,255);
+  background: linear-gradient(90deg, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range]::-moz-range-track {
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: rgb(255,0,0);
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+input[type=range].rangeGreen::-moz-range-track {
+  background: rgb(0,255,0);
+  background: linear-gradient(90deg, rgba(0,255,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range].rangeBlue::-moz-range-track {
+  background: rgb(0,0,255);
+  background: linear-gradient(90deg, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range]::-moz-range-thumb {
+  border: 1px solid #ffffff;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #999999;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type=range]::-ms-track {
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgb(255,0,0);
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range].rangeGreen::-ms-fill-lower {
+  background: rgb(0,255,0);
+  background: linear-gradient(90deg, rgba(0,255,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range].rangeBlue::-ms-fill-lower {
+  background: rgb(0,0,255);
+  background: linear-gradient(90deg, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range]::-ms-fill-upper {
+  background: rgb(255,0,0);
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range].rangeGreen::-ms-fill-upper {
+  background: rgb(0,255,0);
+  background: linear-gradient(90deg, rgba(0,255,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range].rangeBlue::-ms-fill-upper {
+  background: rgb(0,0,255);
+  background: linear-gradient(90deg, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range]::-ms-thumb {
+  border: 1px solid #ffffff;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #999999;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgb(255,0,0);
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range].rangeGreen:focus::-ms-fill-lower  {
+  background: rgb(0,255,0);
+  background: linear-gradient(90deg, rgba(0,255,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range].rangeBlue:focus::-ms-fill-lower  {
+  background: rgb(0,0,255);
+  background: linear-gradient(90deg, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgb(255,0,0);
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range].rangeGreen:focus::-ms-fill-upper {
+  background: rgb(0,255,0);
+  background: linear-gradient(90deg, rgba(0,255,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+input[type=range].rangeBlue:focus::-ms-fill-upper {
+  background: rgb(0,0,255);
+  background: linear-gradient(90deg, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 100%);
+}
